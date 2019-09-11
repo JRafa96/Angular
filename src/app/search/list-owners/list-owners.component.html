@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<div class="w3-container w3-teal">
+    <ul class="w3-ul w3-border w3-light-blue">
+        <li>
+            <h2>Owners</h2>
+        </li>
+        <li *ngFor="let owner of owners">
+            {{owner.firstName}} {{owner.lastName}} - {{owner.city}}
+        </li>
+    </ul>
+</div>

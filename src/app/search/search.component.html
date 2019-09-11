@@ -1,0 +1,9 @@
+<h1>Búscador</h1>
+
+<form action="search.component.ts">
+    <input type="text" name="query" [(ngModel)]="query" />
+    <input type="submit" value="Buscar" (click)="search()" />
+    <p>Parametro de busqueda: {{query}}</p>
+    <p>Resultado {{result}}</p>
+
+</form>

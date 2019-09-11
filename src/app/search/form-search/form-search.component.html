@@ -1,0 +1,10 @@
+<head>
+    <title></title>
+</head>
+<h1>Búscador</h1>
+<form action="search.component.ts" class="form-inline my-2 my-lg-0">
+    Query:
+    <input type="text" name='Query' [placeholder]="placeholder" [(ngModel)]="queryText" class="form-control mr-sm-2" />
+    <input type="button" value="{{labelButton}}" class="btn btn-outline-primary my-2 my-sm-0 btnSubmit"
+        (click)="search($event)" />
+</form>
