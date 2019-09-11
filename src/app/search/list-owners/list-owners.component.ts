@@ -38,7 +38,7 @@ export class ListOwnersComponent implements OnInit {
       this.owners = this.response.filter(owner =>{
       let fields = ['firstName', 'lastName', 'address', 'city'];
       for(let field of fields){
-      return (owner[field].toLowerCase().indexOf(query.toLowerCase()) > -1); //-1 é o numero que está fora do ciclo
+      return (owner[field].toLowerCase().indexOf(query.toLowerCase()) > -1);
       }
     });
   } else {

@@ -1,10 +1,17 @@
-<head>
-    <title></title>
-</head>
-<h1>Búscador</h1>
-<form action="search.component.ts" class="form-inline my-2 my-lg-0">
-    Query:
-    <input type="text" name='Query' [placeholder]="placeholder" [(ngModel)]="queryText" class="form-control mr-sm-2" />
-    <input type="button" value="{{labelButton}}" class="btn btn-outline-primary my-2 my-sm-0 btnSubmit"
-        (click)="search($event)" />
-</form>
+<div>
+
+    <head>
+        <title></title>
+    </head>
+    <div >
+        <h1>Búscador</h1>
+        <form action="search.component.ts" class="form-inline my-2 my-lg-0 pt-3">
+                <span class="ui-float-label">
+                    <input id="Query" type="text" size="30" pInputText name='Query'  [(ngModel)]="queryText"> 
+                    <label for="float-input" [innerHTML]="placeholder"></label>
+                </span>
+            <input type="button" value="{{labelButton}}" class="btn btn-outline-primary ml-2 my-2 my-sm-0 btnSubmit"
+                (click)="search($event)" />
+        </form>
+    </div>
+</div>

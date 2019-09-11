@@ -15,9 +15,11 @@
                 <p>{{msgEventSearch}}</p>
               </div>
             </div>
+            <div class="col-lg-6 mt-3  rounded">
+                    <app-list-owners [onSearch]="query"></app-list-owners>
+            </div>
           </div>
         </div>
       </main>   
       
       
-      <app-list-owners [onSearch]="query"></app-list-owners>
